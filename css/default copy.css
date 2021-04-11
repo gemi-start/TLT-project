@@ -1,0 +1,249 @@
+
+
+/*---------------------------- hero-image ----------------------------*/
+.hero-image {
+  /* The image used */
+  background-image: url(../images/banner.jpg);
+
+  /* Full height */
+  height: 100%;
+
+  /* Center and scale the image nicely */
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  position: relative;
+}
+.hero-image  .hero-text {
+  text-align: center;
+  color: #fff;
+  width: 18em;
+}
+
+.hero-btn {
+  background-color: transparent;
+  border: 2px solid #fff;
+  color: #fff;
+  margin: 2rem auto;
+  font-size: 1em;
+  letter-spacing: 0.05em;
+  padding: 5px 20px;
+  cursor: pointer;
+  transition: all 0.1s ease-in-out;
+}
+.hero-btn:hover {
+  border: 5px solid #fff;
+}
+
+.hero-arrow {
+  color: #fff;
+  margin: 2rem auto;
+  width: 2.5em;
+}
+/* 
+.hero-image > div:first-child {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+
+.hero-image > div:last-child {
+  position: absolute;
+  bottom: 5%;
+  left: 50%;
+  transform: translate(-50%, 0);
+}  */
+/*---------------------------- end hero-image style ----------------------------*/
+
+/* Start Home page style */
+
+/* brands section*/
+.brands {
+  background-color: #f8f7f7; 
+}
+.brands ul {
+  flex-wrap: wrap;
+  justify-content: center;
+}
+.brands ul li {
+  margin-right: 30px;
+}
+.brands ul li:nth-child(3):hover::after {
+  content: "Entertainment";
+  transition: all 0.3s ease-in-out;
+}
+.brands ul li:last-child {
+  margin-left: 100px;
+}
+
+.brands ul li a {
+  transition: all 0.3s ease-in-out;
+  color: #9b9999;
+  font-size: larger;
+}
+
+.brands ul li a.active,
+.brands ul li a:hover,
+.brands ul li:nth-child(3)::after {
+  text-decoration: underline;
+  color: black;
+  font-size: x-large
+}
+.brands .slider {
+  display: flex;
+  justify-content: space-between;
+  width: 70%;
+  margin: 0 auto;
+  /* align-items: baseline; */
+}
+
+.owl-next,
+.owl-prev {
+  text-decoration: underline;
+  color: #9b9999 !important;
+  font-weight: bold !important;
+  width: 15px;
+  height: 100px;
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
+  display: block !important;
+}
+.owl-next{
+  right: -50px;
+}
+.owl-prev {
+  left: -50px;
+}
+.owl-next span,
+.owl-prev  span {
+  display: block !important;
+  transform-origin: 80%;
+}
+.owl-next span {
+  transform: rotate(90deg);
+}
+.owl-prev  span {
+  transform: rotate(-90deg);
+}
+
+/* end brands section*/
+
+/* latest news */
+.latest-news {
+  background-color: #f2f0f0;
+}
+.news .news-box{
+  flex: 45%;
+  margin:20px 10px;
+}
+.latest-news {
+  padding: 10px;
+  margin: 25px 0;
+}
+ .sort-news{
+  border-bottom: 1px solid #000;
+  width: 140px;
+}
+ .sort-news::after{
+  content: '+';
+  margin-left: 80px;
+}
+/* end latest news */
+
+.branches {
+  background-color: #f8f7f7;
+  padding: 5% 10%;
+}
+
+.branches .tlt-logo {
+  margin-bottom: -25px;
+}
+
+.branches .branches-body {
+  padding: 50px;
+  border: 2px solid #d6d5d5;
+}
+
+.branches .branches-body > div {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  margin-top: 20px;
+  color: #98968d;
+}
+
+.brand-name {
+  width: 25%;
+  text-align: left;
+  text-transform: uppercase;
+  font-size: small;
+  padding-left: 30px;
+}
+.brand-logo {
+  width: 50%;
+}
+
+/* End Home page style */
+
+/* About page*/
+.about-section {
+  margin: 150px 0;
+  background-color: #f2f0f0;
+  height: 2200px;
+}
+.about-section .container-80{
+  top: -75px;
+  left: 10%;
+}
+
+.text-mw-280 {
+  max-width: 280px;
+}
+
+/* End About page*/
+
+@media only screen and (max-width: 1200px) {
+  /*About page*/
+  .about-section article {
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+  }
+  .about-section article > div {
+    width: auto !important;
+    height: auto !important;
+  }
+  .order-first-sm {
+    order: -1;
+  }
+  .order-last-sm {
+    order: 13;
+  }
+  /*End About page*/
+}
+/*
+@media (max-width: 900px) {
+}
+
+@media (max-width: 600px) {
+} */
+
+@media (max-width: 800px) {
+  .w-mobile-80{
+    width: 80%;
+  }
+  .w-mobile-100{
+    width: 100%;
+  }
+  .brand-name {
+    width: 100%;
+    text-align: center;
+    padding-left: 0px;
+    margin: 1em 0;
+  }
+  .brand-logo {
+    width: 100%;
+  }
+}
