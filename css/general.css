@@ -366,7 +366,10 @@ main a, footer a {
   margin-top: 3rem !important;
   margin-bottom: 3rem !important;
 }
-
+.my-6 {
+  margin-top: 6rem !important;
+  margin-bottom: 6rem !important;
+}
 .my-auto {
   margin-top: auto !important;
   margin-bottom: auto !important;
